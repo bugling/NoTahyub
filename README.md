@@ -1,2 +1,2 @@
 # NoTahyub
-그들에게 타협이란 없다
+There's No Tahyub for two Guys😏
