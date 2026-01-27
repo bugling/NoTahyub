@@ -30,7 +30,7 @@ public class BOJ1543_1 {
                 }
 
                 // 내부 비교용 인덱스가 전체 범위 밖으로 넘어가면 text내부 반복문 종료(ArrayIndexOutOfBoundsException 방지)
-                if (index == dictionary.length) {
+                if (index == dictionary.length && j < text.length) {
                     matched = false;
                     break;
                 }
