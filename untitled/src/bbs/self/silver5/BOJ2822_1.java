@@ -1,19 +1,19 @@
-package bbs.self;
+package bbs.self.silver5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
-public class BOJ2822 {
+public class BOJ2822_1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         List<Problem> list = new ArrayList<>();
-
-        // 입력
         for (int i = 0; i < 8; i++) {
-            int score = Integer.parseInt(br.readLine());
-            list.add(new Problem(i + 1, score));
+            list.add(new Problem(i + 1, Integer.parseInt(br.readLine())));
         }
 
         Collections.sort(list, new Comparator<Problem>() {
@@ -25,7 +25,6 @@ public class BOJ2822 {
 
         int sum = 0;
         List<Integer> selected = new ArrayList<>();
-
         for (int i = 0; i < 5; i++) {
             sum += list.get(i).score;
             selected.add(list.get(i).index);
@@ -34,17 +33,16 @@ public class BOJ2822 {
         Collections.sort(selected);
 
         System.out.println(sum);
-        for (int n : selected) {
-            System.out.print(n + " ");
+        for (int i = 0; i < selected.size(); i++) {
+            System.out.print(selected.get(i) + " ");
         }
-
     }
 
     static class Problem {
         int index;
         int score;
 
-        Problem(int index, int score) {
+        public Problem(int index, int score) {
             this.index = index;
             this.score = score;
         }

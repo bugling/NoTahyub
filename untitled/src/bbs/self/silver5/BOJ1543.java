@@ -1,9 +1,8 @@
-package bbs.self;
+package bbs.self.silver5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 // 세준이는 영어로만 이루어진 어떤 문서를 검색하는 함수를 만들려고 한다
 // 이 함수는 어떤 단어가 총 몇 번 등장하는지 세려고 한다.

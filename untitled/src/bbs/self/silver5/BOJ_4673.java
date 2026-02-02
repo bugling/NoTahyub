@@ -1,4 +1,4 @@
-package bbs.self;
+package bbs.self.silver5;
 
 public class BOJ_4673 {
     public static void main(String[] args) {

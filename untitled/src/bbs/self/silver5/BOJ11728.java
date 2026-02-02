@@ -1,4 +1,4 @@
-package bbs.self;
+package bbs.self.silver5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
